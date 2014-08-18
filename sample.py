@@ -169,36 +169,5 @@ class Sample:
 
 
 
-'''
-
-
-s = Sample()
-s.loadFromFile("kicks/kick1.wav")
-print s.waveForm.shape
-s.rightPad(1.0)
-
-s1 = Sample()
-s1.setDuration(.25)
-s1.setFrequency(500)
-
-
-
-s = Sample()
-
-def f(t):
-	return 40 + t*10
-
-s.setFrequency(60)
-
-
-
-s.addSample(s1, .75)
-'''
-
-
-
-
-
-
 
 

@@ -7,7 +7,6 @@
 
 import numpy as np
 import scipy.io.wavfile 
-from sample import Sample
 import math as m
 import os
 import copy
@@ -68,7 +67,7 @@ class Synthesizer:
 		if os.path.isfile(fname): os.remove(fname)
 		scipy.io.wavfile.write(fname, self.sampleRate, waveForm)		
 
-
+'''
 
 def subbass_f(t):
 	return 40 
@@ -88,4 +87,4 @@ a = Synthesizer()
 a.addSample(subbass, loop_times=5)
 a.saveWaveForm(a.getWaveForm(), "shakeyourbody.wav")
 
-
+'''
